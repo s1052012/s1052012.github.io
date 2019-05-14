@@ -1,0 +1,76 @@
+body
+{
+	font-family: "Verdana";
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	overflow: scroll;
+}
+.color
+{
+	width: 100%;
+ 	height: 1000px;
+	position: relative;
+	background-color: rgb(50,100,122);
+	opacity: 0.8;
+}
+#white
+{
+	position: absolute;
+	width: 80%;
+	top: 100px;
+    right:0;
+    bottom:0;
+    left:0;
+	margin: auto;
+	background-color: white;
+}
+.arrowhead
+{
+	position: absolute;
+	top:580px;
+    left:700px;
+    color: black;
+    text-decoration: none;
+}
+.arrowhead:hover
+{
+	text-decoration: none;
+	color: black;
+}
+
+/* 40px */
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	left: 50%;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: #f90;
+	position: absolute;
+	content: "";
+}
+/*箭頭左*/
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.62rem;
+}
+/*箭頭右*/
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.62rem;
+}
+/*去除藍色外框線*/
+.toTop-arrow:focus {outline: none;}
